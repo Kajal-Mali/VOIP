@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VoIP Video Calling App</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1><i class="fas fa-video"></i> VoIP Video Calling App</h1>
+  </header>
+
+  <div class="description">
+    Make seamless video calls with your friends, share your screen, and record calls with ease.
+  </div>
+
+  <div class="container">
+    <video id="localVideo" autoplay muted></video>
+    <div class="timer" id="timer">00:00</div>
+    <div class="controls">
+      <button class="start" onclick="startCall()" title="Start Call"><i class="fas fa-video"></i></button>
+      <button class="share" onclick="shareScreen()" title="Share Screen"><i class="fas fa-desktop"></i></button>
+      <button class="share" onclick="stopSharing()" title="Stop Sharing"><i class="fas fa-stop"></i></button>
+      <button class="record" onclick="startRecording()" title="Start Recording"><i class="fas fa-record-vinyl"></i></button>
+      <button class="record" onclick="stopRecording()" title="Stop Recording"><i class="fas fa-stop-circle"></i></button>
+      <button class="invite" onclick="inviteFriend()" title="Invite Friend"><i class="fas fa-user-plus"></i></button>
+      <button class="end" onclick="endCall()" title="End Call"><i class="fas fa-phone-slash"></i></button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
